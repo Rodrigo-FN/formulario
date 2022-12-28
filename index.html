@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">FreeCodeCamp Survey Form</h1>
+        <p class="cabecalho__texto">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main class="principal">
+        <form action="formulario.php" autocomplete="on">
+            <div class="form">
+                <label class="form__label" for="iname">Name</label>
+                <input class="form__input" type="text" name="name" id="iname" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form">
+                <label class="form__label" for="iemail">Email</label>
+                <input class="form__input" type="email" name="email" id="iemail" placeholder="Enter your Email" required>
+            </div>
+
+            <div class="form">
+                <label class="form__label" for="iage">Age<small>(optional)</small></label>
+                <input class="form__input" type="number" name="age" id="iage" placeholder="Age">
+            </div>
+
+            <div class="form">
+                <label class="form__label" for="iquestion">Which option best describes your current role?</label>
+                <select class="form__input" name="question" id="iquestion">
+                    <option class="opt" value="" disabled selected >Select current role</option>
+                    <option class="opt" value="student">Student</option>
+                    <option class="opt" value="job">Full Time Job</option>
+                    <option class="opt" value="learner">Full Time learner</option>
+                    <option class="opt" value="prefer">Prefer not to say</option>
+                    <option class="opt" value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label class="form__label" for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+                <div class="container__radio">
+                    <input class="form__radio" type="radio" name="recommend" checked id="definitely"> <label for="definitely">Definitely</label>
+                </div>
+                
+                <div class="container__radio">
+                    <input class="form__radio" type="radio" name="recommend" id="maybe"> <label for="maybe">Maybe</label>
+                </div>
+
+                <div class="container__radio">
+                    <input class="form__radio" type="radio" name="recommend" id="not"> <label for="not">Not sure</label>
+                </div>
+            </div>
+
+            <div class="form">
+                <label class="form__label" for="ifavorite">What is your favorite feature of freeCodeCamp?</label>
+                <select class="form__input" name="favorite" id="ifavorite">
+                    <option class="opt" value="" disabled selected>Select an option</option>
+                    <option class="opt" value="challenges">Challenges</option>
+                    <option class="opt" value="projects">Projects</option>
+                    <option class="opt" value="community">Community</option>
+                    <option class="opt" value="open">Open Source</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label class="form__label" for="improved">What would you like to see improved? <small>(Check all that apply)</small></label>
+            
+                <div class="check">
+                    <input type="checkbox" name="front" id="ifront" checked>
+                    <label for="ifront"> Front-end Projects</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="back" id="iback">
+                    <label for="iback"> Back-end Projects</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="data" id="idata">
+                    <label for="idata">Data Visualization</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="challe" id="ichalle">
+                    <label for="ichalle"> Challenges</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="gitter" id="igitter">
+                    <label for="igitter"> Gitter help rooms</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="source" id="isource">
+                    <label for="isource"> Open Soucer Community</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="video" id="ivideo">
+                    <label for="ivideo"> Videos</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="city" id="icity">
+                    <label for="icity"> City Meetups</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="wiki" id="iwiki">
+                    <label for="iwiki"> Wiki</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="forum" id="iforum">
+                    <label for="iforum"> Forum</label>
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="add" id="iadd">
+                    <label for="iadd"> Additional Courses</label>
+                </div>
+            </div>    
+
+            <div class="form">
+                <label class="form__label" for="isuggestions">Any comments or suggestions?</label>
+                
+                <textarea class="area__text" name="suggestions" id="isuggestions" cols="30" rows="10" placeholder="Your message!"></textarea>
+
+            </div>
+
+            <div class="form">
+                <input class="botao" type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
