@@ -7,7 +7,7 @@ Formulário de Pesquisa.
 
 
 ## Deploy
-Veja o deploy do meu projeto por aqui: <a href="">Formulário</a>. 😊
+Veja o deploy do meu projeto por aqui: <a href="https://rodrigo-fn.github.io/formulario/" target="_blank">Formulário</a>. 😊
 
 
 ## 🛠 Tecnologias
